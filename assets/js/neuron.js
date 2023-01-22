@@ -10,13 +10,11 @@ window.onload = function(){
         console.log(answer)
         md5 = getMD5(answer)
         url = "./"+md5+".html"
-        console.log(url)
-        $(location).attr("href", url);
+        
         $.ajax(url, {
             statusCode: {
               404: function() {
                 alert("Resposta incorreta!")
-                $(location).attr("href", url);
               },
               200: function() {
                 alert("Resposta correta!")
