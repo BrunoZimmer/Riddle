@@ -6,24 +6,21 @@ window.onload = function(){
     }
 
     $("#form-answer").submit(function(e){
-        var answer = $("#input-answer").val()
-        console.log(answer)
-        md5 = getMD5(answer)
-        url = "./"+md5+".html"
-        
-        $.ajax(url, {
-            statusCode: {
-              404: function() {
-                alert("Resposta incorreta!")
-              },
-              200: function() {
-                alert("Resposta correta!")
-                $(location).attr("href", url);
-              }
+      var answer = $("#input-answer").val()
+      md5 = getMD5(answer)
+      url = "./"+md5+".html"
+      $.ajax(url, {
+          statusCode: {
+            404: function() {
+              alert("Resposta incorreta!")
+            },
+            200: function() {
+              $(location).attr("href", url);
             }
-        });
-        e.preventDefault(e)
-    });
+          }
+      });
+      e.preventDefault(e)
+  });
     
     $(document).on("input", "#input-answer", function () {
       var limite = document.getElementById('input-answer').getAttribute('maxlength')
