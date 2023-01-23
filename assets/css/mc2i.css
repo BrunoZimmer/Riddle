@@ -84,7 +84,7 @@
 }
 
 .footer-black a{
-    color:  rgb(89, 168, 137);
+    color:  #bc095f;
 }
 
 .btn-neuron{
@@ -145,8 +145,7 @@
 
 .div-conteudo-formato-resposta{
     text-align: center;
-    font-weight: bold;
-    color: #bc095f;
+    color: white;
     font-size: 10pt;
 }
 
