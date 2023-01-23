@@ -1,6 +1,8 @@
 .content-background{
+    display:flex;
     background-color: rgba(0, 0, 0, 0.85);
 }
+
 
 .back-img{
     background-image: url("./../../midia/imgs/background-pattern-mc2i.png");
@@ -64,8 +66,8 @@
 
 
 .footer-black{
-    position:absolute;
-    bottom:0;
+    position:flex;
+    bottom: 0;
     width:100%;
     background-color: #001010;
     font-family: 'Courier New', Courier, monospace;
@@ -86,7 +88,7 @@
 }
 
 .btn-neuron{
-    background-color: rgb(89,168,137);
+    background-color: #99084e;
     color: #000000;
 }
 
@@ -136,13 +138,15 @@
 
 .div-caracteres{
     text-align: center;
-    color: rgb(89, 168, 137);
+    color: #bc095f;
     font-size: 10pt;
+    font-weight: bold;
 }
 
 .div-conteudo-formato-resposta{
     text-align: center;
-    color: #ffffff;
+    font-weight: bold;
+    color: #bc095f;
     font-size: 10pt;
 }
 
