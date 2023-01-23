@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./../assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./../assets/css/mc2i.css">
+    <title>Riddle</title>
+    <script src="./../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./../assets/js/jquery.mask.min.js"></script>
+    <script src="./../assets/js/bootstrap.js"></script>
+    <script src="./../assets/js/riddle.js"></script>
+
+    <body class="back-img">
+        <main role="main">
+
+            <nav class="navbar navbar-expand-lg navbar-dark dark-green">                
+                <a class="navbar-brand" ><img class="logo" src="./../midia/imgs/mc2i-icon.png" alt="logo mc2i"></a>                               
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>        
+            </nav>
+
+            <div class="jumbotron container content-background">
+                <div class="col-xl-12 col-sm-12 col-md-12 col-lg-12 div-main">
+                    <div class="nivel-title">
+                        <h1>MC2i est energie</h1>
+                    </div>
+                    <div class="div-midia-nivel">
+                        <img src="./../midia/lecreateur.jpeg" alt="lecreateur" class="img-nivel-center"/>
+                    </div>
+                    <div class="div-conteudo-nivel">
+                        Je ne suis pas imaginaire
+                    </div>           
+                    <!-- C'est moi qui l'ai créée -->         
+                    <hr>
+                    <div class="div-resposta-nivel">
+                        <form class="form-inline justify-content-center" id="form-answer">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="answer" class="sr-only">Réponse:</label>
+                                <input type="text" class="form-control" id="input-answer" placeholder="Réponse" maxlength="8">
+                            </div>
+                            <button class="btn btn-neuron mb-2" id="btn-answer">Envoyer</button>
+                        </form>
+                    </div>
+                    <div class="div-caracteres">
+                        Caractères restants: <span id="contagem"> 8 </span>
+                    </div>          
+                    <div class="div-conteudo-formato-resposta">
+                        Format de la réponse : sans accent et uniquement en minuscules.
+                    </div>         
+                </div>
+            </div>
+        </main>
+    </body>    
+    <footer class="footer footer-black">
+        <div class="container">
+            <div class="row">
+                    <div class="col-xl-6 col-sm-12 col-md-12 col-lg-6">                          
+                        <p><br>Droits réservés pour Bruno Zimmer</p>
+                    </div>
+                    <div class="col-xl-6 col-sm-12 col-md-12 col-lg-6">
+                        <p>Suivez-nous sur les réseaux sociaux:</p>
+                        <ul>
+                            <li> 
+                                <span class="social-icon"><img src="./../midia/imgs/linkedin-icon-rose2.png" alt="ícone do linkedin"/> </span> 
+                                <a href="https://www.linkedin.com/company/mc2i/" target="_blank">@mc2i</a>
+                            </li>
+                            <li> 
+                                <span class="social-icon"><img src="./../midia/imgs/instagram-icon-rose.png" alt="ícone do instagram"/> </span> 
+                                <a href="https://www.instagram.com/mc2igroupe/" target="_blank">@mc2igroupe</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>                
+        </div>
+    </footer>
+</html>
